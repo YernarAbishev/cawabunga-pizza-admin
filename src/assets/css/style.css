@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --light: #DFF6FF;
+    --danger: #EB455F;
+    --warning: #FFD739;
+    --success: #14C38E;
+    --info: #47B5FF;
+    --dark: #06283D;
+    --primary: #1363DF;
+}
+body {
+    background-color: var(--dark);
+}
+.container-fluid {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 10px 35px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.mb-5 {
+    margin-bottom: 25px;
+}
+.btn.is-primary {
+    background-color: var(--primary);
+    color: var(--light);
+}
+.btn.is-success {
+    background-color: var(--primary);
+    color: var(--light);
+}
+.btn.is-info {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+.btn.is-warning {
+    background-color: var(--warning);
+    color: var(--dark);
+}
+.btn.is-danger {
+    background-color: var(--danger);
+    color: var(--light);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.sidebar {
+    padding: 30px 0;
+    min-height: 100vh;
+    width: 300px;
+    background-color: var(--dark);
+}
+.sidebar-title {
+    margin-bottom: 30px;
+    color: var(--light);
+}
+.sidebar-nav .sidebar-nav__item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.sidebar-nav__link {
+    text-decoration: none;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.block {
+    background-color: var(--light);
+    min-height: 100vh;
+    padding: 30px 0;
+}
+.container-fluid.fixed {
+    position: fixed;
+}
+.title {
+    margin-bottom: 30px;
+    color: var(--dark);
+    font-size: 32px;
+}
+.dashboard-row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+.dashboard-item {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 30px;
+    text-align: center;
+    padding: 30px;
+}
+.dashboard-icon {
+    margin-bottom: 20px;
+}
+.dashboard-text {
+    font-size: 18px;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.products-table thead {
+    background-color: var(--primary);
+    color: var(--light);
+}
+.products-table tr, .products-table th, .products-table td {
+    border: 1px solid var(--dark);
+}
+
+.products-table th, .products-table td {
+    padding: 20px;
+}
+.products-table .btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.circle-button {
+    cursor: pointer;
+    background-color: var(--success);
+    color: var(--light);
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+.circle-button svg {
+    position: relative;
+    top: 18px;
+    left: 20px;
+}
+
+.product-detail-row {
+    background-color: var(--warning);
+    border-radius: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 320px auto;
+}
+.product-detail-img {
+    width: 300px;
+    text-align: center;
+}
+.product-detail-img img {
+    width: 80%;
+}
+.product-detail-info {
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-card {
+    width: 60%;
+}
+.form-card .btn {
+    margin-right: 10px;
+}
+.form-control {
+    margin-bottom: 20px;
+}
+.form-control label, .form-control input {
+    display: block;
+}
+.form-control label {
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.form-control input, .form-control select, .form-control textarea {
+    font-size: 18px;
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    border: 1px solid var(--dark);
+    border-radius: 10px;
+}
+.form-control input:focus, .form-control select:focus, .form-control textarea:focus {
+    outline: none;
+    border: 1px solid var(--info);
+}
+
+.delete-alert {
+    width: 50%;
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: var(--danger);
+    color: var(--light);
+    border-radius: 10px;
+}
+.delete-alert span {
+    display: block;
+}
+
+.order-detail-info {
+    background-color: var(--warning);
+    color: var(--dark);
+    padding: 30px;
+    border-radius: 10px;
+}
+.order-detail-info h3 {
+    margin-bottom: 10px;
+}
+.order-detail-info li {
+    list-style: none;
+    padding: 10px;
+    background-color: var(--light);
+    margin: 20px 0;
+    border-radius: 10px;
+    color: var(--dark);
+}

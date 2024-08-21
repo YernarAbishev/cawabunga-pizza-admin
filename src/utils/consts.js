@@ -1,0 +1,9 @@
+export const HOME_PAGE = "/";
+export const PRODUCTS_PAGE = "/products";
+export const PRODUCT_DETAIL_PAGE = "/products/:id";
+export const ADD_PRODUCT_PAGE = "/products/add";
+export const EDIT_PRODUCT_PAGE = "/products/edit/:id";
+export const DELETE_PRODUCT_PAGE = "/products/delete/:id";
+export const ORDERS_PAGE = "/orders";
+export const ORDER_DETAIL_PAGE = "/orders/:id";
+export const DELETE_ORDER_PAGE = "/orders/delete/:id";
